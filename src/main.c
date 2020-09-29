@@ -17,7 +17,7 @@ double rectangle_rule(double left_border, double right_border) {                
 double simpsons_rule(double left_border , double right_border)                             //Правило Симсона
 {
     return (right_border - left_border) / 6 * (sin(left_border) + 4
-                    * sin((left_border + right_border) / 2) + sin(right_border));
+                                                                  * sin((left_border + right_border) / 2) + sin(right_border));
 }
 
 int EnterAll( struct interval_t *interval) {
@@ -141,6 +141,7 @@ int main(){
 
     unsigned int rectangle_count[] = {5, 10, 20, 100, 500, 1000}; // unsigned int - так как мы не использьуем отрицательное количество прямоугольников
     unsigned int numberOfExperiments = sizeof(rectangle_count) / sizeof(rectangle_count[0]); // Получаем количество экспериментов
+
 
     char **answer = array(&interval , &rectangle_count , numberOfExperiments); //создаем указатели на какую-то ячейку памяти, в которой будут ответы
     for(int i = 0 ; i < numberOfExperiments ; i++)
