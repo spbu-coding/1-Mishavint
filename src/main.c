@@ -139,7 +139,7 @@ int main(){
     //FinalResult( &interval);                    // Функция, которая нормально выводит всё, что надо
 
 
-    unsigned int rectangle_count[] = {5, 10, 20, 100, 500, 1000}; // unsigned int - так как мы не использьуем отрицательное количество прямоугольников
+    unsigned int rectangle_count[] = {6, 10, 20, 100, 500, 1000}; // unsigned int - так как мы не использьуем отрицательное количество прямоугольников
     unsigned int numberOfExperiments = sizeof(rectangle_count) / sizeof(rectangle_count[0]); // Получаем количество экспериментов
 
 
